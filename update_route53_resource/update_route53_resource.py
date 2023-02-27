@@ -1,5 +1,4 @@
 import boto3
-import json
 
 def lambda_handler(event, context):
     route53 = boto3.client("route53")
