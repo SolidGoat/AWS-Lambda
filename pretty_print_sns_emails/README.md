@@ -8,9 +8,14 @@ This function will take the message from EventBridge, pass it through `json.dump
 
 ![](img/eventbridge_lambda_sns.png)
 
-## Input
+## Lambda Environment Variables
 
 You'll need to create `topic_arn` environment variable and set it to your SNS topic's arn - `arn:aws:sns:<region>:<account_id>:<topic_name>`.
+
+```
+Key: topic_arn,
+Value: arn:aws:sns:<region>:<account_id>:<topic_name>
+```
 
 ## Lambda Execution Policy
 
